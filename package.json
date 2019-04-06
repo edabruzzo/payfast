@@ -1,22 +1,27 @@
 {
   "name": "payfast",
   "version": "1.0.0",
-  "description": "Curso Alura Node.js e HTTP: desenvolvendo uma API seguindo o estilo REST",
+  "description": "Projeto Alura - Curso Node.js e HTTP: desenvolvendo uma API seguindo o estilo REST",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edabruzzo/payfast.git"
+  },
+  "keywords": [
+    "gateway",
+    "api"
+  ],
   "author": "Emmanuel de Oliveira D'Abruzzo",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
-
-"repository": {
-  "type" : "git",
-  "url" : "https://github.com/edabruzzo/payfast.git"
-}
-
-
-
+  "bugs": {
+    "url": "https://github.com/edabruzzo/payfast/issues"
+  },
+  "homepage": "https://github.com/edabruzzo/payfast#readme"
 }
