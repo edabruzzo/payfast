@@ -95,5 +95,34 @@ var app =  require('./config/custom_express')();
 
 
 
+CRIAR BANCO DE DADOS:
 
+1. Ir até o diretório de instalação do MySQL Server 5.7, na pasta bin
+2. Digitar o comando : 
+
+mysql -u root -p
+
+3. Após abrir o prompt do mysql digitar o comando:
+
+CREATE DATABASE payfast;
+
+USE payfast;
+
+4. EXECUTAR O SCRIPT DE CRIAÇÃO DO BANCO DE DADOS 
+
+CREATE TABLE `pagamentos` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+  `forma_de_pagamento` varchar(255) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `moeda` varchar(3) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `data` DATE,
+  `descricao` text,
+   PRIMARY KEY (id)
+  );
+
+
+5. Na raiz do projeto payfast executar o comando : 
+
+npm install mysql --save
 

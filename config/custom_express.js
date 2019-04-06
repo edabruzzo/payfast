@@ -15,6 +15,7 @@ module.exports = function () {
     //invocando o consign
     consign()
      .include('routers')//injeta os roteadores no objeto app, que está sendo exportado
+     .then('persistencia')
      .into(app);
     
     return app;
