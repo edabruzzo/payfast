@@ -1,3 +1,17 @@
+APRENDENDO EXPRESS
+
+https://expressjs.com/en/starter/generator.html
+
+$npm install express-generator -g
+
+$express --view=pug myapp
+
+Then install dependencies:
+$ cd myapp
+$ npm install
+
+
+
 INSTRUÇÕES PARA CRIAÇÃO DO PROJETO
 
 mkdir payfast
