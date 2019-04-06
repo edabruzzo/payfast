@@ -1,18 +1,30 @@
-var mysql  = require('mysql');
+class ConnectionFactory{
 
-//var password = window.confirm('Informe a senha do banco: '),
+   
+   constructor(){
 
- //construtor da conexão
-  function createDBConnection(){
+    var mysql  = require('mysql');
 
-    return mysql.createConnection({
-      host: 'localhost',
-      user: 'root',
-      password: 'root',
-      database: 'payfast'
-    });
-  }
+   }
+    
 
-  module.exports = function() {
-    return createDBConnection;
-  }
+    //var password = window.confirm('Informe a senha do banco: '),
+    
+     //construtor da conexão
+      createDBConnection(){
+    
+        return mysql.createConnection({
+          host: 'localhost',
+          user: 'root',
+          password: 'root',
+          database: 'payfast'
+        });
+      }
+    
+      /*
+      module.exports = function() {
+        return createDBConnection;
+      }
+*/
+
+}
