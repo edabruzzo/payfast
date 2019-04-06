@@ -14,6 +14,7 @@ Uma nova rota foi criada, porém ela está fazendo a mesma coisa que a rota que 
 Enviando uma requisição HTTP com dados
 A maneira mais comum de enviar dados em uma requisição HTTP é mandá-los no body da requisição. De preferência utilizando um método HTTP cuja semântica seja compatível com essa necessadidade. A nova rota já foi definida com o método POST, então está de acordo. Veja agora como ficaria um exemplo dessa requisição utilizando o CURL:
 
+
   curl http://localhost:3000/pagamentos/pagamento \
   -X POST \ 
   -v \

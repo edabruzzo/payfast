@@ -12,8 +12,11 @@ class ConnectionFactory{
     
      //construtor da conexão
       createDBConnection(){
-    
+
+        console.log('Criando conexão com o banco de dados');
+        
         return mysql.createConnection({
+          
           host: 'localhost',
           user: 'root',
           password: 'root',

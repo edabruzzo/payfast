@@ -1,13 +1,11 @@
+var api = require('../api');
+
 //este código precisa ser exportado para poder ser injetado no app
 module.exports = function (app) {
 
     //DEFININDO ROTAS
-    app.get('/pagamentos', function (request, response) {
-
-        console.log('Recebida requisição GET');
-        response.send('OK');
-
-    });
+    app.route('/pagamentos')
+        .get(api.listaPagamentos);
 
 
 
@@ -15,7 +13,7 @@ module.exports = function (app) {
         var pagamento = req.body;
         console.log('processando pagamento através de requisição POST ...');
 
-        var connection = app.persistencia.connectionFactory;
+        var connection = new ConnectionFactory().createDBConnection();
      
         if(connection){
 
