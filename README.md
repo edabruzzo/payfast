@@ -65,5 +65,35 @@ inicializar pelo npm
 npm start
 
 
+DEFINIÇÃO DE ROTAS E SEPARAÇÃO DA CONFIGURAÇÃO DO EXPRESS ATRAVÉS DE MODULARIZAÇÃO
+
+Criar uma pasta ./config na raiz do projeto e nela o arquivo para configuração do express 'custom_express.js'
+
+Criar uma pasta para gerenciamento de rotas './routers' na raiz do projeto
+
+EXPORTAÇÃO DE MÓDULO E IMPORTAÇÃO:
+
+Criar o arquivo  './config/custom_express.js'
+
+var express = require('express');
+
+//PARTE DO CÓDIGO QUE SERÁ EXPORTADA (VARIÁVEL APP)
+module.exports = function(){
+
+	//CODIGO A SER EXPORTADO EXEMPLO
+	//invocação do código de express através de '()';
+	var app = express();
+	return app;
+
+}
+
+
+importando o módulo criado acima no arquivo './config/custom_express.js'
+
+PARA IMPORTAR O MÓDULO EXPORTADO BASTA USAR O REQUIRE E INVOCAR O CÓDIGO ATRAVÉS DE '()'
+var app =  require('./config/custom_express')();
+
+
+
 
 

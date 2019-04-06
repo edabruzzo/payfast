@@ -4,6 +4,7 @@
   "description": "Projeto Alura - Curso Node.js e HTTP: desenvolvendo uma API seguindo o estilo REST",
   "main": "index.js",
   "dependencies": {
+    "consign": "^0.1.6",
     "express": "^4.16.4"
   },
   "devDependencies": {},

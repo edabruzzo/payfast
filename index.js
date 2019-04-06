@@ -1,16 +1,9 @@
-var express = require('express');
-var app = express();
+
+//ATENÇÃO, PARA FUNCIONAR O REQUIRE É NECESSÁRIO INVOCAR O CÓDIGO ATRAVÉS DE '()'
+var app = require('./config/custom_express')();
+
 app.listen(3000, function(){
 
 	console.log('Servidor iniciado e rodando na porta 3000');
 
 } );
-
-
-//DEFININDO ROTAS
-app.get('/teste', function(request, response){
-
-	console.log('Recebida requisição de teste');
-	response.send('OK');
-
-});
